@@ -1,13 +1,13 @@
 tasks = []
 
-
+# Adding tasks
 def Add_task():
     task = input("Enter you works to do :  ")
     tasks.append(task)
     print(f"Task {task} has be added.")
 
-def delete_task():
-    show_list()
+def delete_task(): # deleting the task list, using index number
+    show_list() # Gets the showlist function.
     try:
         to_delete = int(input("Enter the # task to delete: "))
         if to_delete < len(tasks):
@@ -19,7 +19,7 @@ def delete_task():
         print("Invalid input")
     
 
-def show_list():
+def show_list():  # Showcase all the tasks in the list.
     if not tasks:
         print("No tasks!")
     else:
@@ -29,9 +29,9 @@ def show_list():
 
 
 
-
-if __name__ == "__main__":
-
+#Program starts from here.
+if __name__ == "__main__": #class
+#Gives the output to how to acces using CML
     print("Welcome to super TO-Do-List. :)")
     while True:
         print("Get back to work!")
